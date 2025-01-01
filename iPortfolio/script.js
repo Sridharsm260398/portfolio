@@ -14,7 +14,7 @@ form.addEventListener('submit', async (e) => {
     const formObject = Object.fromEntries(formData.entries());
 
     try {
-        const response = await fetch('https://sridhars-webapp-restapi-postgres-v2.onrender.com', {
+        const response = await fetch('https://sridhars-webapp-restapi-postgres-v2.onrender.com/submit-form', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formObject),
